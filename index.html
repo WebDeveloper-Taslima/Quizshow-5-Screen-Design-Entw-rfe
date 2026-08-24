@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X1 Cinema Quizshow - 5 Screen Design Entwürfe (Cinema 4K)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- STUDIO TOOLBAR / NAVIGATION FOR CLIENT PRESENTATION -->
+  <header class="studio-header">
+    <div class="brand">
+      <img src="assets/x1_logo.png" alt="X1 Logo" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-title">X1 LIVE CINEMA QUIZSHOW</span>
+        <span class="brand-subtitle">Client Presentation • 5 Master Screen Designs • 4096 × 1716 px (Cinema 4K)</span>
+      </div>
+    </div>
+    
+    <nav class="screen-nav">
+      <button class="nav-btn active" data-screen="screen1">
+        <span class="btn-num">01</span>
+        <span class="btn-label">Smartphone App</span>
+      </button>
+      <button class="nav-btn" data-screen="screen2">
+        <span class="btn-num">02</span>
+        <span class="btn-label">Moderator & Top 20/50</span>
+      </button>
+      <button class="nav-btn" data-screen="screen3">
+        <span class="btn-num">03</span>
+        <span class="btn-label">Countdown & Top 20</span>
+      </button>
+      <button class="nav-btn" data-screen="screen4">
+        <span class="btn-num">04</span>
+        <span class="btn-label">Creator Video HUD</span>
+      </button>
+      <button class="nav-btn" data-screen="screen5">
+        <span class="btn-num">05</span>
+        <span class="btn-label">Gewinner & Finale</span>
+      </button>
+    </nav>
+
+    <div class="controls-group">
+      <div class="zoom-controls">
+        <button id="zoomOutBtn" title="Zoom out">-</button>
+        <span id="zoomValue">FIT</span>
+        <button id="zoomInBtn" title="Zoom in">+</button>
+        <button id="resetZoomBtn" title="Fit to viewport">FIT</button>
+      </div>
+      <a id="downloadCurrentBtn" href="output/Design_01_Smartphone_App.png" download class="primary-action-btn" style="text-decoration: none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+        </svg>
+        <span>4K PNG Downloaden</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- VIEWPORT CONTAINER -->
+  <main class="viewport-wrapper">
+    <div id="canvasStage" class="canvas-stage">
+
+      <!-- ==========================================
+           SCREEN 01: SMARTPHONE APP
+           ========================================== -->
+      <section id="screen1" class="cinema-canvas screen-active">
+        <img src="output/Design_01_Smartphone_App.png" alt="Design 01 Smartphone App 4K" class="screen-master-img">
+      </section>
+
+      <!-- ==========================================
+           SCREEN 02: KINO LEINWAND MODERATOR & TOP 20/50
+           ========================================== -->
+      <section id="screen2" class="cinema-canvas">
+        <img src="output/Design_02_Kino_Leinwand_Moderator_Top20_Top50.png" alt="Design 02 Moderator & Top 20/50 4K" class="screen-master-img">
+      </section>
+
+      <!-- ==========================================
+           SCREEN 03: KINO LEINWAND COUNTDOWN & TOP 20
+           ========================================== -->
+      <section id="screen3" class="cinema-canvas">
+        <img src="output/Design_03_Kino_Leinwand_Ankuendigung_Countdown_Top20.png" alt="Design 03 Countdown & Top 20 4K" class="screen-master-img">
+      </section>
+
+      <!-- ==========================================
+           SCREEN 04: KINO LEINWAND QUIZFRAGE AUF QUIZFILM
+           ========================================== -->
+      <section id="screen4" class="cinema-canvas">
+        <img src="output/Design_04_Kino_Leinwand_Quizfrage_Quizfilm.png" alt="Design 04 Quizfrage Creator Video HUD 4K" class="screen-master-img">
+      </section>
+
+      <!-- ==========================================
+           SCREEN 05: KINO LEINWAND GEWINNER & FINALE
+           ========================================== -->
+      <section id="screen5" class="cinema-canvas">
+        <img src="output/Design_05_Kino_Leinwand_Gewinner_Gesamtstand.png" alt="Design 05 Gewinner & Finale 4K" class="screen-master-img">
+      </section>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
